@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>投资助手 - 设计稿预览</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+      background: #f0f2f5;
+      color: #1f1f1f;
+    }
+    header {
+      background: #fff;
+      padding: 24px 32px;
+      border-bottom: 1px solid #e8eaed;
+      text-align: center;
+    }
+    header h1 { font-size: 24px; font-weight: 700; color: #1a73e8; }
+    header p { font-size: 14px; color: #5f6368; margin-top: 4px; }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      padding: 32px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      width: 375px;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .card img {
+      width: 375px;
+      height: 812px;
+      display: block;
+      border-bottom: 1px solid #e8eaed;
+    }
+    .card .label {
+      padding: 14px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      color: #1f1f1f;
+    }
+    .card .label span {
+      display: block;
+      font-size: 12px;
+      font-weight: 400;
+      color: #5f6368;
+      margin-top: 2px;
+    }
+
+    /* Modal for full screen view */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      cursor: zoom-out;
+    }
+    .modal.active { display: flex; }
+    .modal img {
+      max-height: 95vh;
+      max-width: 95vw;
+      border-radius: 12px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+    }
+    .modal .close {
+      position: fixed;
+      top: 16px;
+      right: 24px;
+      font-size: 32px;
+      color: #fff;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .modal .nav-hint {
+      position: fixed;
+      bottom: 20px;
+      color: rgba(255,255,255,0.6);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>投资助手 · 设计稿</h1>
+    <p>点击任意页面可放大查看 · 共 11 个页面</p>
+  </header>
+
+  <div class="gallery" id="gallery"></div>
+
+  <div class="modal" id="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img id="modalImg" src="" alt="">
+    <div class="nav-hint">按 ← → 切换页面 · ESC 关闭</div>
+  </div>
+
+  <script>
+    const pages = [
+      { file: '01-login.svg', title: '01 登录页', desc: '手机号 + 验证码登录' },
+      { file: '02-home-onboarding.svg', title: '02 首页 Onboarding', desc: '添加关注公司' },
+      { file: '03-home-feed.svg', title: '03 首页 Feed', desc: '帖子信息流' },
+      { file: '04-post-detail.svg', title: '04 帖子详情', desc: '结构化内容阅读' },
+      { file: '05b-search-history.svg', title: '05 搜索（空态）', desc: '历史搜索记录' },
+      { file: '05-search.svg', title: '06 搜索结果', desc: '关键词高亮匹配' },
+      { file: '06-consultation-onboarding.svg', title: '07 咨询 Onboarding', desc: '选择投资大师' },
+      { file: '07-consultation-chat.svg', title: '08 咨询会话', desc: '与大师对话' },
+      { file: '08-profile.svg', title: '09 我的', desc: '个人信息' },
+      { file: '08b-profile-edit.svg', title: '10 编辑资料', desc: '修改姓名和个签' },
+      { file: '09-bookmarks.svg', title: '11 我的收藏', desc: '已收藏帖子' },
+    ];
+
+    let currentIdx = 0;
+    const gallery = document.getElementById('gallery');
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+
+    pages.forEach((p, i) => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <img src="${p.file}" alt="${p.title}" loading="lazy">
+        <div class="label">${p.title}<span>${p.desc}</span></div>
+      `;
+      card.onclick = () => openModal(i);
+      gallery.appendChild(card);
+    });
+
+    function openModal(idx) {
+      currentIdx = idx;
+      modalImg.src = pages[idx].file;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (!modal.classList.contains('active')) return;
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowRight') {
+        currentIdx = (currentIdx + 1) % pages.length;
+        modalImg.src = pages[currentIdx].file;
+      }
+      if (e.key === 'ArrowLeft') {
+        currentIdx = (currentIdx - 1 + pages.length) % pages.length;
+        modalImg.src = pages[currentIdx].file;
+      }
+    });
+
+    modalImg.onclick = (e) => e.stopPropagation();
+  </script>
+</body>
+</html>
