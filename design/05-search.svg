@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812">
+  <defs>
+    <style>
+      text { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="375" height="812" fill="#f8f9fa"/>
+
+  <!-- Status Bar -->
+  <rect width="375" height="44" fill="#ffffff"/>
+  <text x="187" y="30" text-anchor="middle" font-size="14" font-weight="600" fill="#1f1f1f">9:41</text>
+
+  <!-- Search Header -->
+  <rect y="44" width="375" height="52" fill="#ffffff"/>
+  <text x="20" y="76" font-size="18" fill="#1f1f1f">←</text>
+  <rect x="48" y="54" width="252" height="36" rx="18" fill="#f8f9fa" stroke="#e8eaed"/>
+  <text x="66" y="78" font-size="14" fill="#1f1f1f">财报</text>
+  <!-- Cursor -->
+  <line x1="92" y1="62" x2="92" y2="82" stroke="#1a73e8" stroke-width="1.5"/>
+  <text x="325" y="78" text-anchor="middle" font-size="14" font-weight="500" fill="#1a73e8">搜索</text>
+  <line x1="0" y1="96" x2="375" y2="96" stroke="#e8eaed"/>
+
+  <!-- Results Header -->
+  <text x="20" y="124" font-size="13" fill="#5f6368">3 条结果</text>
+  <!-- Sort Toggle -->
+  <rect x="238" y="108" width="56" height="24" rx="12" fill="#1a73e8"/>
+  <text x="266" y="125" text-anchor="middle" font-size="12" fill="#ffffff">相关性</text>
+  <rect x="300" y="108" width="60" height="24" rx="12" fill="#ffffff" stroke="#e8eaed"/>
+  <text x="330" y="125" text-anchor="middle" font-size="12" fill="#5f6368">最新发布</text>
+
+  <!-- Result Card 1 -->
+  <rect x="16" y="144" width="343" height="140" rx="12" fill="#ffffff"/>
+  <circle cx="40" cy="168" r="18" fill="#e8f0fe"/>
+  <text x="40" y="173" text-anchor="middle" font-size="14" font-weight="600" fill="#1a73e8">苹</text>
+  <text x="66" y="164" font-size="14" font-weight="600" fill="#1f1f1f">苹果</text>
+  <text x="66" y="179" font-size="11" fill="#9aa0a6">2026-03-16 14:00</text>
+  <rect x="290" y="155" width="56" height="22" rx="4" fill="#1a73e815"/>
+  <text x="318" y="171" text-anchor="middle" font-size="11" font-weight="500" fill="#1a73e8">财报解读</text>
+  <!-- Highlighted title -->
+  <text x="28" y="210" font-size="15" font-weight="600" fill="#1f1f1f">苹果最新</text>
+  <rect x="104" y="196" width="36" height="18" fill="#fff3cd"/>
+  <text x="104" y="210" font-size="15" font-weight="600" fill="#1f1f1f">财报</text>
+  <text x="140" y="210" font-size="15" font-weight="600" fill="#1f1f1f">解读：营收与利润分析</text>
+  <text x="28" y="232" font-size="13" fill="#5f6368">深入分析苹果最新季度财报数据，解读营收...</text>
+  <text x="332" y="268" text-anchor="middle" font-size="18">☆</text>
+
+  <!-- Result Card 2 -->
+  <rect x="16" y="296" width="343" height="140" rx="12" fill="#ffffff"/>
+  <circle cx="40" cy="320" r="18" fill="#e8f0fe"/>
+  <text x="40" y="325" text-anchor="middle" font-size="14" font-weight="600" fill="#1a73e8">特</text>
+  <text x="66" y="316" font-size="14" font-weight="600" fill="#1f1f1f">特斯拉</text>
+  <text x="66" y="331" font-size="11" fill="#9aa0a6">2026-03-16 13:30</text>
+  <rect x="290" y="307" width="56" height="22" rx="4" fill="#1a73e815"/>
+  <text x="318" y="323" text-anchor="middle" font-size="11" font-weight="500" fill="#1a73e8">财报解读</text>
+  <text x="28" y="362" font-size="15" font-weight="600" fill="#1f1f1f">特斯拉最新</text>
+  <rect x="116" y="348" width="36" height="18" fill="#fff3cd"/>
+  <text x="116" y="362" font-size="15" font-weight="600" fill="#1f1f1f">财报</text>
+  <text x="152" y="362" font-size="15" font-weight="600" fill="#1f1f1f">解读：营收与利润分析</text>
+  <text x="28" y="384" font-size="13" fill="#5f6368">深入分析特斯拉最新季度财报数据...</text>
+  <text x="332" y="420" text-anchor="middle" font-size="18">☆</text>
+
+  <!-- Result Card 3 -->
+  <rect x="16" y="448" width="343" height="140" rx="12" fill="#ffffff"/>
+  <circle cx="40" cy="472" r="18" fill="#e8f0fe"/>
+  <text x="40" y="477" text-anchor="middle" font-size="14" font-weight="600" fill="#1a73e8">茅</text>
+  <text x="66" y="468" font-size="14" font-weight="600" fill="#1f1f1f">茅台</text>
+  <text x="66" y="483" font-size="11" fill="#9aa0a6">2026-03-16 13:00</text>
+  <rect x="290" y="459" width="56" height="22" rx="4" fill="#1a73e815"/>
+  <text x="318" y="475" text-anchor="middle" font-size="11" font-weight="500" fill="#1a73e8">财报解读</text>
+  <text x="28" y="514" font-size="15" font-weight="600" fill="#1f1f1f">茅台最新</text>
+  <rect x="100" y="500" width="36" height="18" fill="#fff3cd"/>
+  <text x="100" y="514" font-size="15" font-weight="600" fill="#1f1f1f">财报</text>
+  <text x="136" y="514" font-size="15" font-weight="600" fill="#1f1f1f">解读：营收与利润分析</text>
+  <text x="28" y="536" font-size="13" fill="#5f6368">深入分析茅台最新季度财报数据...</text>
+  <text x="332" y="572" text-anchor="middle" font-size="18">⭐</text>
+
+  <!-- Annotation -->
+  <rect x="0" y="760" width="375" height="52" fill="#f8f9fa"/>
+  <text x="187" y="790" text-anchor="middle" font-size="12" fill="#5f6368">05 - 搜索结果页（关键词高亮）</text>
+</svg>

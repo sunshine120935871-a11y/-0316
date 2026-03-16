@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812">
+  <defs>
+    <style>
+      text { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="375" height="812" fill="#f8f9fa"/>
+
+  <!-- Status Bar -->
+  <rect width="375" height="44" fill="#ffffff"/>
+  <text x="187" y="30" text-anchor="middle" font-size="14" font-weight="600" fill="#1f1f1f">9:41</text>
+
+  <!-- Profile Card -->
+  <rect y="44" width="375" height="230" fill="#ffffff"/>
+
+  <!-- Avatar -->
+  <circle cx="187" cy="110" r="36" fill="#e8f0fe"/>
+  <text x="187" y="120" text-anchor="middle" font-size="28" font-weight="700" fill="#1a73e8">张</text>
+
+  <!-- Name -->
+  <text x="187" y="170" text-anchor="middle" font-size="18" font-weight="700" fill="#1f1f1f">张三</text>
+
+  <!-- Bio -->
+  <text x="187" y="192" text-anchor="middle" font-size="13" fill="#5f6368">长期价值投资者，关注消费和科技赛道</text>
+
+  <!-- Phone -->
+  <text x="187" y="212" text-anchor="middle" font-size="12" fill="#9aa0a6">138****1234</text>
+
+  <!-- Edit Button -->
+  <rect x="147" y="224" width="80" height="32" rx="16" fill="#ffffff" stroke="#1a73e8"/>
+  <text x="187" y="245" text-anchor="middle" font-size="13" font-weight="500" fill="#1a73e8">编辑资料</text>
+
+  <!-- Menu Section 1 -->
+  <rect y="286" width="375" height="56" fill="#ffffff"/>
+  <text x="20" y="320" font-size="15" fill="#1f1f1f">⭐ 我的收藏</text>
+  <text x="310" y="320" text-anchor="middle" font-size="12" fill="#9aa0a6">3</text>
+  <text x="348" y="320" text-anchor="middle" font-size="18" fill="#9aa0a6">›</text>
+  <line x1="20" y1="342" x2="355" y2="342" stroke="#e8eaed"/>
+
+  <!-- Menu Section 2: Logout -->
+  <rect y="354" width="375" height="56" fill="#ffffff"/>
+  <text x="187" y="388" text-anchor="middle" font-size="15" fill="#ea4335">退出登录</text>
+
+  <!-- Tab Bar -->
+  <rect y="756" width="375" height="56" fill="#ffffff"/>
+  <line x1="0" y1="756" x2="375" y2="756" stroke="#e8eaed"/>
+  <text x="62" y="778" text-anchor="middle" font-size="20">🏠</text>
+  <text x="62" y="796" text-anchor="middle" font-size="11" fill="#9aa0a6">首页</text>
+  <text x="187" y="778" text-anchor="middle" font-size="20">💬</text>
+  <text x="187" y="796" text-anchor="middle" font-size="11" fill="#9aa0a6">咨询</text>
+  <text x="312" y="778" text-anchor="middle" font-size="20">👤</text>
+  <text x="312" y="796" text-anchor="middle" font-size="11" font-weight="600" fill="#1a73e8">我的</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812">
+  <defs>
+    <style>
+      text { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', sans-serif; }
+      .title { font-size: 28px; font-weight: 700; fill: #1a73e8; }
+      .subtitle { font-size: 14px; fill: #5f6368; }
+      .label { font-size: 14px; font-weight: 500; fill: #1f1f1f; }
+      .placeholder { font-size: 15px; fill: #9aa0a6; }
+      .hint { font-size: 12px; fill: #9aa0a6; }
+      .btn-text { font-size: 16px; font-weight: 600; fill: #ffffff; }
+      .btn-secondary-text { font-size: 14px; font-weight: 500; fill: #1a73e8; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="375" height="812" fill="#ffffff"/>
+
+  <!-- Status Bar -->
+  <rect width="375" height="44" fill="#ffffff"/>
+  <text x="187" y="30" text-anchor="middle" font-size="14" font-weight="600" fill="#1f1f1f">9:41</text>
+
+  <!-- Title -->
+  <text x="187" y="260" text-anchor="middle" class="title">投资助手</text>
+  <text x="187" y="284" text-anchor="middle" class="subtitle">您的个人投资研究伙伴</text>
+
+  <!-- Phone Label -->
+  <text x="24" y="356" class="label">手机号</text>
+
+  <!-- Phone Input -->
+  <rect x="24" y="366" width="327" height="48" rx="8" fill="#ffffff" stroke="#e8eaed" stroke-width="1"/>
+  <text x="40" y="396" class="placeholder">请输入手机号</text>
+
+  <!-- Code Label -->
+  <text x="24" y="446" class="label">验证码</text>
+
+  <!-- Code Input + Button -->
+  <rect x="24" y="456" width="200" height="48" rx="8" fill="#ffffff" stroke="#e8eaed" stroke-width="1"/>
+  <text x="40" y="486" class="placeholder">请输入验证码</text>
+  <rect x="236" y="456" width="115" height="48" rx="8" fill="#e8f0fe"/>
+  <text x="293" y="486" text-anchor="middle" class="btn-secondary-text">获取验证码</text>
+
+  <!-- Login Button -->
+  <rect x="24" y="540" width="327" height="48" rx="8" fill="#1a73e8"/>
+  <text x="187" y="570" text-anchor="middle" class="btn-text">登录</text>
+
+  <!-- Hint -->
+  <text x="187" y="612" text-anchor="middle" class="hint">首次登录将自动注册账号</text>
+
+  <!-- Annotation -->
+  <rect x="0" y="760" width="375" height="52" fill="#f8f9fa"/>
+  <text x="187" y="790" text-anchor="middle" font-size="12" fill="#5f6368">01 - 登录页</text>
+</svg>
