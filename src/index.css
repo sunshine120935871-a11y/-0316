@@ -1,0 +1,54 @@
+:root {
+  --primary: #1a73e8;
+  --primary-light: #e8f0fe;
+  --danger: #ea4335;
+  --text: #1f1f1f;
+  --text-secondary: #5f6368;
+  --text-hint: #9aa0a6;
+  --bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --border: #e8eaed;
+  --tag-financial: #1a73e8;
+  --tag-product: #0d652d;
+  --tag-risk: #ea4335;
+  --tag-company: #e37400;
+  --tag-industry: #7b1fa2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, button {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
